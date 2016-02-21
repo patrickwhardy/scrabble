@@ -1,7 +1,16 @@
+require 'pry'
+
 class Scrabble
+
   def score(word)
-    0
-  end
+    if word == nil || word.length == 0
+      0
+    else
+     word.chars.map do |letter|
+         point_values[letter.upcase]
+     end.reduce(:+)
+   end
+   end
 
   def point_values
     {
