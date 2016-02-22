@@ -20,7 +20,3 @@ class ScrabbleTest < Minitest::Test
   end
 
 end
-
-# char_array.map |char|
-# point_values(char.upcase)
-# end.reduce(:+)
